@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTFOLIO</title>
+  <style>
+    /* Reset some default spacing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+    
+      background-color: #ffffff;
+      padding: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      width: 100%;
+      max-width: 600px; /* Maximum width for readability */
+      margin: 0 auto;
+      height: fit-content;
+      
+      padding: 5px;
+      background: linear-gradient( to right , rgb(193, 187, 187) 60% , rgb(0, 0, 0) 40%)
+      }
+
+    
+
+   
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 1px;
+      }
+
+     
+    }
+    
+    
+    
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      color: white;
+      
+    }
+
+    .navbar .logo {
+      font-size: 10px;
+      font-weight: bold;
+      
+     
+    }
+     .navbar ul {
+      margin-left: 60%;
+      display: flex;
+      font-family: century ;
+      font-size: small;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      margin-left: 10px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 11px;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: rgb(45, 176, 202);
+    }
+    
+  .intro{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    justify-content: space-between;
+      display: flex;
+    
+  }
+  .port{
+    margin-left: 90px;
+    font-size: large;
+    margin-top: 0px;
+  }
+  .front{
+    font-size: small;
+    margin-left: 25px;
+    color: black;
+  
+    width: 50%;
+    
+  }
+  .social-media{
+    background-color:transparent;
+    display: flex;
+      justify-content: space-evenly;
+      width: 60%;
+      margin-top: 30px;
+      align-items: center;
+    
+  }
+  .rk{
+    vertical-align: middle;
+      border-radius: 50%;
+      border: 1px solid rgb(12, 10, 10);
+       animation: rk 3s infinite;
+  }
+   @keyframes rk {
+  50% {border-color: rgb(117, 6, 69);}
+}
+  .photo{
+    margin-right: 30px;
+    margin-top: 50px;
+   
+  }
+  .avtar{
+    vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  margin-right: 30px;
+  border-radius: 50%;
+  border: 3px solid rgb(101, 217, 128);
+  animation: mymove 3s infinite;
+  }
+  @keyframes mymove {
+  50% {border-color: rgb(18, 117, 170);}
+}
+  
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+  <nav class="navbar">
+    <!-- <div class="logo"><img class="rk" src="logo.jpg" height="40px" width="40px"></div> -->
+    <ul>
+      <li><a href="portfilio.html">HOME</a></li>
+      <li><a href="about.html" target="_blank">ABOUT</a></li>
+      <li><a href="#">#####</a></li>
+      <li><a href="#">#######</a></li>
+    </ul>
+  </nav>  
+    <div class="port">PORTFOLIO</div>    
+     <div class="intro">
+      MAYANK <br>TIWARI
+    <div><img class="avtar" src="4.jpg" alt="avtar">
+    </div>
+    </div>
+      <div class="front"><marquee direction="right" scrollamount="2" behavior="alternate">FRONT-END DEVLOPER (UI/UX DESIGNER)</marquee></div>
+      <div class="social-media">
+        <div class="linked"><a  href="https://www.linkedin.com/in/rajjan-kumar-b337b033b/" target="_blank""><img src="linkedin-3d-icon-free-png.webp" height="30px"></a></div>
+        <div class="git"><a href="https://github.com/Rajjan-kumar-26" target="_blank"><img src="git-logo.png" height="30px"></a></div>
+      <div class="insta"><a  href="https://www.instagram.com/mynkkkk__26?igsh=cWFmN2szeDEya2N6" target="_blank"><img src="insta.png" height="30px"></a></div>
+      
+      <div class="email"><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="email-line-icon-png.webp" height="30px"></a></div>
+      
+        
+      </div>
+
+     </div>
+
+  </div>
+</body>
+</html>

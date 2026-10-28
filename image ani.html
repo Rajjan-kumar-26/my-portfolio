@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Image Shadow</title>
+  <style>
+    body {
+      background: #111;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-shadow {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      animation: glowShadow 2s ease-in-out infinite;
+    }
+
+    @keyframes glowShadow {
+      0% {
+        box-shadow: 0 0 0px rgba(0, 255, 255, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+      }
+      100% {
+        box-shadow: 0 0 0px rgba(0, 255, 255, 0.4);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://via.placeholder.com/200" alt="Profile" class="image-shadow">
+
+</body>
+</html>

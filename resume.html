@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Why Hire Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      width: 40%;
+      background-color: #1f242d;
+      color: white;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .left h2 {
+      margin-bottom: 20px;
+    }
+
+    .box {
+      background-color: #343a40;
+      padding: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      background-color: #495057;
+    }
+
+    .right {
+      width: 60%;
+      padding: 30px;
+      background-color: #f8f9fa;
+      overflow-y: auto;
+    }
+
+    .content {
+      display: none;
+    }
+
+    .content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <h2>Why Hire Me?</h2>
+    <div class="box" onclick="showContent('experience')">Experience</div>
+    <div class="box" onclick="showContent('education')">Education</div>
+    <div class="box" onclick="showContent('skills')">Skills</div>
+    <div class="box" onclick="showContent('about')">About</div>
+  </div>
+
+  <div class="right">
+    <div id="experience" class="content active">
+      <h2>Experience</h2>
+      <p>2+ years in web development, frontend projects using HTML, CSS, JavaScript and basic backend work.</p>
+    </div>
+    <div id="education" class="content">
+      <h2>Education</h2>
+      <p>BCA 2nd year, MGCGV Chitrakoot. Strong focus on software development and computer fundamentals.</p>
+    </div>
+    <div id="skills" class="content">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Frontend Projects</li>
+        <li>Basic Cloud & DevOps Knowledge</li>
+      </ul>
+    </div>
+    <div id="about" class="content">
+      <h2>About</h2>
+      <p>I'm Rajjan Kumar, passionate about technology, eager to grow as a Software Engineer and Cloud Engineer.</p>
+    </div>
+  </div>
+
+  <script>
+    function showContent(id) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(c => c.classList.remove('active'));
+
+      const selected = document.getElementById(id);
+      if (selected) {
+        selected.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

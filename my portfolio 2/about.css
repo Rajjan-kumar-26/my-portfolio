@@ -1,0 +1,113 @@
+ /* Reset some default spacing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+    
+      background-color: #fbfbfb;
+      padding: 0px;
+    }
+    .container{
+      max-width: 100%;
+      width: 100%;
+      max-width: 600px; /* Maximum width for readability */
+      margin: 0 auto;
+      height: 200px;     
+      padding: 5px;
+      background: linear-gradient( to right , rgb(253, 253, 253) 60% , rgb(255, 255, 255) 40%)
+      }
+      .about{
+        margin-left: 0%;
+        margin-top: 5px;
+        /* justify-content: space-between;
+        display: flex; */
+    }
+    .about p{
+        margin-top: 5px;
+        text-shadow: 1px 1px 3px black;
+        color: rgb(0, 183, 255);
+        font-family: algerian;
+        font-weight: bold;
+        width: 100%;
+    }
+      .web{
+        height: 200px;
+        margin-left: 0px;
+    
+      }
+    .photo{
+      border: 1px solid;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about1{
+        margin-top: 50px;
+        font-size: 12px;
+    }
+  .about2{
+      margin-top: 50px ;
+      font-size: 13px;
+    }
+    .short{
+      align-items: center;
+      margin-top: 10px;
+      font-size: 13px;
+      display: flex;
+      margin-left: px;
+      border: 1px solid;
+      
+    
+      justify-content: space-between;
+    }
+.photo2{
+border-left:  5px solid  rgb(0, 183, 255); 
+border-right:  5px solid  rgb(0, 183, 255);
+border-top:  5px solid  rgb(0, 183, 255); 
+border-bottom: 5px solid rgb(0, 183, 255);
+  
+}
+.myintro{
+  text-align: center;
+}
+.myimage{
+  margin-top: px;
+  background-color: 
+  red;
+
+  border: 0px solid;
+  margin-left: 20px;
+}
+
+
+.about3{
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  font-size: small;
+  margin-left: 10px;
+
+}
+.photo3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:small ;
+  margin-top: 10px;
+
+   border: 1px solid;
+
+}
+.rajjan{
+  height: 200px;
+  margin-top: 0px;
+  
+}
+.bottom{
+  text-align: center;
+  margin-top: 10px;
+  background-color: rgb(25, 93, 142);
+  color: white;
+}

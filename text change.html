@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Effect</title>
+  <style>
+    body {
+      background: #eef1f5;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .typing-container {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      background-color: #333;
+      margin-left: 4px;
+      animation: blink 0.7s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="typing-container">
+    <span id="typed-text"></span><span class="cursor"></span>
+  </div>
+
+  <script>
+    const roles = ["Cloud Engineer.", "Frontend Developer.", "DevOps Engineer."];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const textSpan = document.getElementById("typed-text");
+
+    function typeEffect() {
+      const currentRole = roles[roleIndex];
+      
+      if (!isDeleting) {
+        textSpan.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
+        
+        if (charIndex === currentRole.length) {
+          setTimeout(() => {
+            isDeleting = true;
+            typeEffect();
+          }, 3000); // Wait 3s after full text typed
+          return;
+        }
+      } else {
+        textSpan.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+        
+        if (charIndex === 0) {
+          isDeleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+      }
+
+      const delay = isDeleting ? 40 : 100;
+      setTimeout(typeEffect, delay);
+    }
+
+    typeEffect();
+  </script>
+
+</body>
+</html>
